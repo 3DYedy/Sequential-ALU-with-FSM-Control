@@ -41,7 +41,6 @@ module TOP_TB();
         .ready(ready_tb)
     );
 
-    // 3. Generarea ceasului (Clock) - Perioadă de 10ns ($100MHz$)
     always #5 clk_tb = ~clk_tb;
 
     initial begin
@@ -54,7 +53,6 @@ module TOP_TB();
 
         #15 rst_tb = 1; 
         
-        // TEST 1: Adunare (a=5, b=3, sel=00)
         #10;
         a_tb = 4'd5; b_tb = 4'd3; sel_tb = 2'b00; start_tb = 1;
         #10 start_tb = 0;
@@ -62,7 +60,6 @@ module TOP_TB();
         wait(ready_tb); 
         $display("Test Adunare: %d + %d = %d (Ready: %b)", a_tb, b_tb, result_tb, ready_tb);
 
-        // TEST 2: XOR (a=10, b=12, op=11)
         #20;
         a_tb = 4'b1010; b_tb = 4'b1100; sel_tb = 2'b11; start_tb = 1;
         #10 start_tb = 0;
