@@ -1,7 +1,7 @@
 # Sequential-ALU-with-FSM-Control
 
 ## Project Overview
-This repository contains a **SystemVerilog** implementation of a 4-bit Arithmetic Logic Unit (ALU) managed by a synchronous **Finite State Machine (FSM)**. The project was developed as part of my studies at **ETTI UNSTPB** to demonstrate RTL design and functional verification skills.
+This repository contains a **SystemVerilog** implementation of a 4-bit Arithmetic Logic Unit (ALU) managed by a synchronous **Finite State Machine (FSM)**. 
 
 ## Key Features
 * **Operations:** Addition, Subtraction, Bitwise AND, and Logical XOR.
